@@ -6,7 +6,7 @@ toolchain go1.24.2
 
 require (
 	github.com/go-kit/log v0.2.1
-	github.com/go-resty/resty/v2 v2.16.5
+	github.com/go-resty/resty/v2 v2.17.2
 	github.com/joho/godotenv v1.5.1
 	github.com/prometheus/client_golang v1.23.2
 	gopkg.in/yaml.v3 v3.0.1
