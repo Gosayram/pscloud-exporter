@@ -108,7 +108,7 @@ jobs:
           GOOS=windows GOARCH=amd64 go build -ldflags "-X main.Version=${{ env.VERSION }} -X main.Build=${{ env.BUILD }}" -o pscloud-exporter.exe ./cmd/pscloud-exporter
 
       - name: Upload binaries to GitHub Release
-        uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3.0.1
+        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
         with:
           body_path: last_commits.txt
           tag_name: ${{ env.TAG_NAME }}
