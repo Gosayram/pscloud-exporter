@@ -33,7 +33,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # master
         with:
@@ -62,7 +62,7 @@ jobs:
           egress-policy: audit
         
       - name: Checkout code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
       - name: Get Go Version
         run: |
           #!/bin/bash
@@ -92,7 +92,7 @@ jobs:
           egress-policy: audit
         
       - name: Checkout code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
       - name: Run analysis
         uses: ossf/scorecard-action@50757822a4ac41af1c2f5572df4e1c1a5ae50c03 # main
         with:
